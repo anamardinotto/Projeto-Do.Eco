@@ -1,0 +1,72 @@
+* {
+    margin-left: 0px;
+    padding: 0;
+    margin-top: 0px;
+}
+
+.container {
+display: grid;
+width: 844px;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr); 
+font-family: "Fredoka";
+text-align: center;
+}
+
+.Nav {
+  grid-area: 1 / 1 / 2 / 6;
+  background-color: white;
+  height: 135px;
+  align-content: center;
+  
+}
+
+.Termos {
+  grid-area: 2 / 1 / 6 / 6;
+  margin-top: -122px;
+  align-content: center;
+}
+
+.titulo {
+
+  margin-top: 45px;
+  margin-bottom: 36px;
+  text-align: center;
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  color: #1A1A1A;
+}
+
+.linha {
+  border: 1px solid #B1B1B1;
+}
+
+.close {
+  font-size: 45px;
+  font-weight: 600;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+
+.botao {
+  
+}
+
+.texto {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #646464;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 72px;
+  margin-right: 73px;
+  margin-top: 45px;  
+}
