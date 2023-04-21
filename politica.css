@@ -20,7 +20,7 @@ body {
   flex-basis: auto;
   align-self: auto;
   order: 0;
-  
+
   display: flex;
   align-items: center;
   justify-content: space-between ;
@@ -36,8 +36,9 @@ body {
 }
 
 .btn-voltar {
-  margin-left: -260px !important;
-  height: auto;
+  margin-left: -280px !important;
+  width: auto;
+  
 }
 
 .termos {
@@ -52,15 +53,6 @@ body {
   color: #1A1A1A;
 }
 
-.texto {
-  font-weight: 400;
-  font-size: 16px;
-  margin-left: 75px ;
-  margin-right: 75px;
-  text-align: justify;
-  color: #646464;
-  margin-top: 30px;
-}
 
 hr {
   display: block;
@@ -73,32 +65,17 @@ hr {
   color: #B1B1B1;
 }
 
-.funcao {
-  color: #16D6FA;
-  font-weight: 600;
+.texto {
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 75px ;
+  margin-right: 75px;
+  text-align: justify;
+  color: #646464;
+  margin-top: 30px;
 }
 
-.aceite {
-  color: #16D6FA;
-  font-weight: 600;
-}
-
-.glossario {
-  color: #16D6FA;
-  font-weight: 600;
-}
-
-.acesso {
-  color: #16D6FA;
-  font-weight: 600;
-}
-
-.licenca {
-  color: #16D6FA;
-  font-weight: 600;
-}
-
-.obrigacoes {
+.azul {
   color: #16D6FA;
   font-weight: 600;
 }

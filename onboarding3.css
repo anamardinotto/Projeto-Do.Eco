@@ -1,17 +1,11 @@
-html {
- width: 100%;
-  height: 100%;
-  font-family: 'Fredoka' !important;
-}
-
 .flex-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-top: 5%;
+  margin-top: -15px;
 }
 
 .flex-items:nth-child(1) {
@@ -39,34 +33,59 @@ html {
   flex-basis: auto;
   align-self: auto;
   order: 0;
+  justify-content: space-between;
+  
 }
 
 .flex-items:nth-child(4) {
-  display: block;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
   align-self: auto;
   order: 0;
-}
-
-.logo {
-  margin-top: 10px;
-}
-
-.bem-vindo {
   align-items: center;
-  text-align: center;
-  font-weight: 400;
-  font-size: 24px;
+  justify-content: space-between;
+  display: flex;
 }
-.brincar {
-  font-weight: 400;
+
+body {
+  font-family: 'Fredoka';
+  color: #1A1A1A;
+}
+
+.titulo {
+  font-size: 26px;
+  font-weight: 600;
   text-align: center;
+  margin-top: 24px;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 25px;
   color: #646464;
-  margin-bottom: 30px !important;
-  font-size: 16px;
-  margin-top: -10px
+}
+
+.pular {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 600px;
+  margin-top: -60px;
+  color: #B1B1B1;
+  text-decoration: none;
+}
+
+.anterior {
+  font-weight: 600;
+  font-size: 18px;
+  color: #B1B1B1;
+  text-decoration: none;
+  margin-right: 700px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 .btn-cadastro {
@@ -74,25 +93,16 @@ html {
   background-color: #FEC603;
   font-size: 16px;
   border-radius: 20px;
-  margin-top: 30px;
   text-decoration: none;
   color: white;
-  margin-top: 50px !important;
   font-weight: 500;
   border: 1px solid #D3A503;
   box-shadow:  0px 4px 4px #CD9F00;
+  
+  margin-left: 650px;
+  margin-top: -15px;
 }
 
-.tem {
-  font-weight: 400;
-  margin-top: 30px;
-  font-size: 16px;
-  text-decoration: none;
-  color: #646464;
+.pontinho {
+  margin-top: -50px;
 }
-.entrar {
-  text-decoration: none;
-  color: #FEC603;
-  font-weight: 600;
-}
-

@@ -12,6 +12,7 @@ background: #FFFFFF;
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin-top: -30px;
 }
 
 .flex-items:nth-child(1) {
@@ -30,6 +31,9 @@ background: #FFFFFF;
   flex-basis: auto;
   align-self: auto;
   order: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
 }
 
 .flex-items:nth-child(3) {
@@ -39,21 +43,25 @@ background: #FFFFFF;
   flex-basis: auto;
   align-self: auto;
   order: 0;
-  margin-top: 30px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
 }
 
 .flex-items:nth-child(4) {
-  display: block;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
   align-self: auto;
   order: 0;
+  display: flex;
+
 }
 
 .crie {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
   color: #1A1A1A;
   margin-top: 40px;
@@ -62,37 +70,12 @@ background: #FFFFFF;
 .tem {
   font-weight: 400;
   margin-top: -8px;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   text-align: center;
   color: #646464;
-}
-.entrar {
-  text-decoration: none;
-  color: #FEC603;
-  font-weight: 600;
-}
-
-.caixa1 {
-  border: 1px solid #B1B1B1;
-  border-radius: 20px;
-  align-items: center;
-  padding: 16px 24px;
-  gap: 16px;
-  width: 372px;
-  box-sizing: border-box;
-  height: 40px;
-  left: 236px;
-  top: 128px;
-  margin-top: 10px;
-
-  font-family: 'Fredoka';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.01em;
-  color: #6C6C6C;
+  margin-bottom: 18px;
+  
 }
 
 .caixa2 {
@@ -101,12 +84,11 @@ background: #FFFFFF;
   align-items: center;
   padding: 16px 24px;
   gap: 16px;
-  width: 372px;
+  width: 243px;
   box-sizing: border-box;
-  height: 40px;
-  left: 236px;
-  top: 128px;
-  margin-top: 10px;
+  height: 33px;
+  left: 300px;
+  top: 307px;
 
   font-family: 'Fredoka';
   font-style: normal;
@@ -117,34 +99,35 @@ background: #FFFFFF;
   color: #6C6C6C;
 }
 
-.btn-cadastro {
-  padding: 8px 18px;
-  background: #FEC603;
-  border: 1px solid #D3A503;
-  box-shadow: 0px 4px 4px #CD9F00;
-  border-radius: 20px;
-  font-family: 'Fredoka';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  text-decoration: none;
-  text-align: center;
+.bubby {
+  margin-top: 10px;
+}
+
+h3 {
+  margin-top: 10px !important;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 10px;
   letter-spacing: 0.01em;
-  color: #FFFFFF;
-}
-
-.checkbox {
-  margin-top: 30px !important;
   color: #646464;
-}
-.termos {
-  color: #16D6FA;
-  font-size: 12px;
+  text-align: center;
+  margin-bottom: 0px;
 }
 
-label {
-  font-size: 12px;
-  color: #646464;
+.direita {
+  margin-right: 40px;
 }
 
+.esquerda {
+  margin-left: 40px;
+}
+
+.foto {
+  margin-right: 15px;
+}
+
+.seta {
+  margin-left: 700px;
+  margin-bottom: 23px;
+  margin-top: -50px !important;
+}

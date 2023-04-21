@@ -1,0 +1,151 @@
+body {
+  background-color: #FFFFFF;
+  font-family: 'fredoka', sans-serif;
+  background-size: cover;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.flex-items:nth-child(1) {
+/*   display: block; */
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  width: 100%;
+}
+
+.flex-items:nth-child(3) {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+
+  display: flex;
+}
+
+.flex-items:nth-child(4) {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+
+  display: flex;
+}
+
+.flex-items:nth-child(5) {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+
+  display: flex;
+}
+
+.btn-voltar {
+  margin-left: -280px !important;
+  width: auto;
+  
+}
+
+.termos {
+  font-weight: 500;
+  font-size: 24px;
+  font-size: 24px;
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 50px;
+  color: #1A1A1A;
+  margin-left: 60px;
+}
+
+.texto {
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 75px ;
+  margin-right: 75px;
+  text-align: justify;
+  color: #646464;
+  margin-top: 30px;
+}
+
+img {
+   margin-left: -170px;
+   margin-top: -15px;
+}
+
+.btn-sair {
+  padding: 5px 35px;
+  border: 1px solid #B1B1B1;
+  border-radius: 20px;
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #FEC603;
+
+  margin-left: 700px;
+  margin-top: 50px;
+}
+
+.line {
+  width: 100%;
+  color: #B1B1B1;
+}
+
+
+.icon1 {
+  margin-left: 60px;
+  margin-top: 60px
+}
+
+.icon2 {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 60px
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon3 {
+  margin-left: 60px;
+  margin-top: 26px
+}
+
+.icon4 {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 26px
+}

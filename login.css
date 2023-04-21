@@ -1,43 +1,84 @@
 html { position: relative;
-width: 844px;
-height: 390px;
+width: 100%;
+height: 100%;
 font-family: 'Fredoka';
 background: #FFFFFF;
 }
 
-.grid {
-display: grid;
-grid-template-columns: 0.45fr 1fr 1.5fr 0.45fr 1fr;
-grid-template-rows: repeat(3, 0.5fr) 0.2fr 0.5fr 0.2fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px; 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-.frase1 {
-  grid-area: 1 / 2 / 2 / 4;
-  font-style: normal;
-  font-weight: 700;
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  margin-top: 30px;
+}
+
+.flex-items:nth-child(4) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.crie {
+  font-weight: 600;
   font-size: 24px;
-  line-height: 50px;
-  letter-spacing: 0.01em;
-  color: #1A1A1A;
   text-align: center;
-  margin-left: 150px;
+}
+
+.tem {
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+}
+.entrar {
+  text-decoration: none;
+  color: #FEC603;
+  font-weight: 600;
 }
 
 .caixa1 {
-  grid-area: 2 / 2 / 3 / 4; 
   border: 1px solid #B1B1B1;
   border-radius: 20px;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 16px 24px;
   gap: 16px;
   width: 372px;
   box-sizing: border-box;
-  margin-left: 130px;
-  height: 44px;
+  height: 40px;
   left: 236px;
   top: 128px;
   margin-top: 10px;
@@ -45,85 +86,40 @@ grid-row-gap: 0px;
   font-family: 'Fredoka';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.01em;
   color: #6C6C6C;
 }
 
 .caixa2 {
-  grid-area: 3 / 2 / 4 / 4;
   border: 1px solid #B1B1B1;
   border-radius: 20px;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 16px 24px;
   gap: 16px;
   width: 372px;
   box-sizing: border-box;
-  margin-left: 130px;
-  height: 44px;
+  height: 40px;
   left: 236px;
   top: 128px;
-  margin-top: 13px;
+  margin-top: 10px;
 
   font-family: 'Fredoka';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.01em;
   color: #6C6C6C;
 }
 
-.seta {
-  grid-area: 1 / 1 / 2 / 2;
-  margin-left: 20px;
-  margin-top: 30px;
-}
-
-.olho {
-  grid-area: 3 / 2 / 4 / 4;
-  margin-top: 23px;
-  margin-left: 445px;
-}
-
-.esqueceu {
- margin-left: 130px;
- margin-top: 5px;
- grid-area: 4 / 2 / 5 / 4;
- font-family: 'Fredoka';
- font-style: normal;
- font-weight: 400;
- font-size: 16px;
- line-height: 24px;
- letter-spacing: 0.01em;
- text-decoration-line: underline;
- color: #646464;
-}
-
-.btn2 {
- grid-area: 6 / 2 / 7 / 4;
-    align-self:center;
-  display: flex;
-  justify-content: center;
-  width: 80px;
-  height: 25px;
-  padding: 5px 18px;
-  gap: 10px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-left: 250px;
-  margin-top: -70px;
-
-  
+.btn-cadastro {
+  padding: 8px 32px;
   background: #FEC603;
   border: 1px solid #D3A503;
   box-shadow: 0px 4px 4px #CD9F00;
   border-radius: 20px;
-
   font-family: 'Fredoka';
   font-style: normal;
   font-weight: 700;
@@ -135,27 +131,40 @@ grid-row-gap: 0px;
   color: #FFFFFF;
 }
 
-
+.checkbox {
+  margin-top: 30px !important;
+}
 .termos {
-  margin-left: 140px;
-  text-align: center;
-  margin-top: 40px;
-  grid-area: 6 / 2 / 7 / 4;
-  font-family: 'Fredoka';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  color: #16D6FA;
+}
+
+.esqueci {
+  margin-left: 10px;
   color: #646464;
+  font-size: 14px;
+}
+
+.crie {
+  margin-top: -30px;
+}
+
+.btn-voltar {
+  margin-left: -175px !important;
+  margin-top: 25px;
+  width: 15%;
+  height: auto;
   
 }
-
-.btntermos {
-  font-family: 'Fredoka';
-  font-style: normal;
-  font-weight: 700;
+.tem {
+  font-weight: 400;
+  margin-top: 30px;
   font-size: 16px;
-  line-height: 24px;
-  color: #FEC603;
   text-decoration: none;
+  color: #646464;
 }
+.entrar {
+  text-decoration: none;
+  color: #FEC603;
+  font-weight: 600;
+}
+

@@ -17,31 +17,32 @@
 </head>
 
 <body>
-  <div class="grid">
-    <p class="frase1">Crie sua conta Do.Eco</p>
-    <p class="frase2">Já possui uma conta? <a class="btn" href="https://www.google.com/">Entrar</a></p>
-    <!--CAIXAS DE TEXTO -->
-    <form name="email"> </form>
-    <input class="caixa1" type="text" placeholder="Digite seu e-mail institucional"> <br>
 
-    <form name="senha"> </form>
-    <input class="caixa2" type="text" placeholder="Digite sua senha"> <br>
-
-    <div class="olho">
-      <img src="Imagens/OLHO FECHADO2.png" alt="olhoicon">
+  <div class="flex-container">
+    <div class="flex-items">
+      <h1 class="crie"> Crie sua conta Do.Eco </h1>
+      <h2 class="tem"> Já possui uma conta? <a class="entrar"
+          href="https://projeto-doeco.anamardinotto.repl.co/login.html">Entrar</a>
     </div>
+    <div class="flex-items">
+      <form name="email"> </form>
+      <input class="caixa1" type="text" placeholder="Digite seu e-mail institucional"> <br>
 
-    <div class="seta">
-      <a href="https://projeto-doeco.anamardinotto.repl.co/cadastro.html">
-        <img src="Imagens/SETA.png" alt="seta">
-      </a>
+      <form name="senha"> </form>
+      <input class="caixa2" type="text" placeholder="Digite sua senha"> <br>
+
     </div>
-    <!--BOTÃO -->
-    <a class="btn2" href="https://projeto-doeco.anamardinotto.repl.co/login.html">Cadastrar</a>
-    <!--TERMOS -->
-    <p class="termos">Eu concordo com os <a class="btntermos" href="https://www.google.com/">Termos de Uso</a> </p>
-
+    <div class="flex-items">
+      <a class="btn-cadastro" href="https://projeto-doeco.anamardinotto.repl.co/mascote.html">Cadastre-se</a>
+    </div>
+    <div>
+      <input type="checkbox" class="checkbox" name="termos" checked>
+      <label for="Termos">Eu concordo com os <a class="termos"
+          href="https://projeto-doeco.anamardinotto.repl.co/termos.html">Termos de Uso</a> </label>
+    </div>
+    <div class="flex-items"></div>
   </div>
+
 </body>
 
 </html>

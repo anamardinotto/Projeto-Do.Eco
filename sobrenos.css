@@ -20,7 +20,7 @@ body {
   flex-basis: auto;
   align-self: auto;
   order: 0;
-  
+
   display: flex;
   align-items: center;
   justify-content: space-between ;
@@ -36,8 +36,9 @@ body {
 }
 
 .btn-voltar {
-  margin-left: -260px !important;
-  height: auto;
+  margin-left: -350px !important;
+  width: auto;
+  
 }
 
 .termos {
@@ -71,39 +72,4 @@ hr {
   border-style: inset;
   border-width: 1px;
   color: #B1B1B1;
-}
-
-.funcao {
-  color: #16D6FA;
-  font-weight: 600;
-}
-
-.aceite {
-  color: #16D6FA;
-  font-weight: 600;
-}
-
-.glossario {
-  color: #16D6FA;
-  font-weight: 600;
-}
-
-.acesso {
-  color: #16D6FA;
-  font-weight: 600;
-}
-
-.licenca {
-  color: #16D6FA;
-  font-weight: 600;
-}
-
-.obrigacoes {
-  color: #16D6FA;
-  font-weight: 600;
-}
-
-.verde {
-  color: #7CE94C;
-  font-weight: 600;
 }
