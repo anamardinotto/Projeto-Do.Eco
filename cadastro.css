@@ -8,14 +8,14 @@ background: #FFFFFF;
 
 .grid {
 display: grid;
-grid-template-columns: 33% 33% 33%;
+grid-template-columns: 0.45fr repeat(2, 1fr) 0.45fr 1fr;
 grid-template-rows: 0.5fr 0.2fr repeat(3, 0.5fr) 0.2fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px; 
 }
 
 .logo {
-  grid-area: 1 / 1 / 2 / 3;
+  grid-area: 1 / 1 / 2 / 4;
   text-align: center;
   margin-top: 45px;
   margin-left: 150px;
@@ -58,7 +58,7 @@ grid-row-gap: 0px;
   gap: 10px;
   flex-direction: row;
   align-items: center;
-  margin-left: 210px;
+  margin-left: 250px;
   margin-top: -95px;
   
 

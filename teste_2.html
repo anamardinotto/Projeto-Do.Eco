@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mini jogo</title>
+	<style>
+		canvas {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+
+<canvas id="canvas" width="500" height="500"></canvas>
+
+<script>
+
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+
+	// definir variáveis
+	var x = canvas.width/2;
+	var y = canvas.height-30;
+	var dx = 5;
+	var dy = 0;
+	var itemX = 50;
+	var itemY = 50;
+	var itemWidth = 20;
+	var itemHeight = 20;
+	var itemCollected = false;
+	var score = 0;
+
+	// função para desenhar o personagem
+	function drawCharacter() {
+		ctx.beginPath();
+		ctx.rect(x, y, 20, 20);
+		ctx.fillStyle = "#0095DD";
+		ctx.fill();
+		ctx.closePath();
+	}
+
+	// função para desenhar o item
+	function drawItem() {
+		if (!itemCollected) {
+			ctx.beginPath();
+			ctx.rect(itemX, itemY, itemWidth, itemHeight);
+			ctx.fillStyle = "#FF0000";
+			ctx.fill();
+			ctx.closePath();
+		}
+	}
+
+	// função para verificar se o item foi coletado
+	function checkCollision() {
+		if (!itemCollected && x < itemX + itemWidth && x + 20 > itemX && y < itemY + itemHeight && y + 20 > itemY) {
+			itemCollected = true;
+			score++;
+		}
+	}
+
+	// função para desenhar o score
+	function drawScore() {
+		ctx.font = "16px Arial";
+		ctx.fillStyle = "#0095DD";
+		ctx.fillText("Score: " + score, 8, 20);
+	}
+
+	// função para desenhar na tela
+	function draw() {
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		drawCharacter();
+		drawItem();
+		checkCollision();
+		drawScore();
+
+		if (x + dx > canvas.width - 20 || x + dx < 0) {
+			dx = -dx;
+		}
+
+		x += dx;
+	}
+
+	// função para atualizar a tela a cada intervalo de tempo
+	setInterval(draw, 10);
+
+	// função para detectar a tecla pressionada
+	document.addEventListener("keydown", function(event) {
+		if (event.keyCode == 39) {
+			dx = -5;
+			dy = 0;
+		} else if (event.keyCode == 37) {
+			dx = 5;
+			dy = 0; 
+		} else {
+      dx = 0;
+      dy = 0;
+    }
+
+	});
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mini jogo</title>
+	<style>
+		canvas {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+
+<canvas id="canvas" width="500" height="500"></canvas>
+
+<script>
+
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+
+	// definir variáveis
+	var x = canvas.width/2;
+	var y = canvas.height-30;
+	var dx = 0;
+	var dy = 0;
+	var itemX = 50;
+	var itemY = 50;
+	var itemWidth = 20;
+	var itemHeight = 20;
+	var itemCollected = false;
+	var score = 0;
+
+	// função para desenhar o personagem
+	function drawCharacter() {
+		ctx.beginPath();
+		ctx.rect(x, y, 20, 20);
+		ctx.fillStyle = "#0095DD";
+		ctx.fill();
+		ctx.closePath();
+	}
+
+	// função para desenhar o item
+	function drawItem() {
+		if (!itemCollected) {
+			ctx.beginPath();
+			ctx.rect(itemX, itemY, itemWidth, itemHeight);
+			ctx.fillStyle = "#FF0000";
+			ctx.fill();
+			ctx.closePath();
+		}
+	}
+
+	// função para verificar se o item foi coletado
+	function checkCollision() {
+		if (!itemCollected && x < itemX + itemWidth && x + 20 > itemX && y < itemY + itemHeight && y + 20 > itemY) {
+			itemCollected = true;
+			score++;
+		}
+	}
+
+	// função para desenhar o score
+	function drawScore() {
+		ctx.font = "16px Arial";
+		ctx.fillStyle = "#0095DD";
+		ctx.fillText("Score: " + score, 8, 20);
+	}
+
+	// função para desenhar na tela
+	function draw() {
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		drawCharacter();
+		drawItem();
+		checkCollision();
+		drawScore();
+
+		if (x + dx > canvas.width - 20 || x + dx < 0) {
+			dx = 0;
+			dy = 0;
+		}
+
+		x += dx;
+	}
+
+	// função para atualizar a tela a cada intervalo de tempo
+	setInterval(draw, 10);
+
+	// função para detectar a tecla pressionada
+	document.addEventListener("keydown", function(event) {
+		if (event.keyCode == 37) {
+			dx = -5;
+			dy = 0;
+		} else if (event.keyCode == 39) {
+			dx = 5;
+			dy = 0;
+		}
+	});
+
+</script>
+
+</body>
+</html>
